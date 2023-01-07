@@ -1,0 +1,17 @@
+assign id_imm[19] = (id_inst[31]&!id_inst[14]&!id_inst[13]&id_inst[5]&!id_inst[4]
+    &!id_inst[3]&!id_inst[2]&id_inst[1]&id_inst[0]) | (id_inst[31]
+    &!id_inst[12]&!id_inst[6]&!id_inst[5]&id_inst[4]&!id_inst[3]
+    &!id_inst[2]&id_inst[1]&id_inst[0]) | (id_inst[19]&id_inst[6]
+    &id_inst[5]&!id_inst[4]&id_inst[3]&id_inst[2]&id_inst[1]&id_inst[0]) | (
+    id_inst[31]&!id_inst[14]&!id_inst[13]&!id_inst[12]&id_inst[6]
+    &id_inst[5]&!id_inst[4]&!id_inst[3]&id_inst[1]&id_inst[0]) | (
+    id_inst[31]&id_inst[14]&id_inst[6]&id_inst[5]&!id_inst[4]&!id_inst[3]
+    &!id_inst[2]&id_inst[1]&id_inst[0]) | (id_inst[31]&id_inst[13]
+    &!id_inst[6]&!id_inst[5]&id_inst[4]&!id_inst[3]&!id_inst[2]
+    &id_inst[1]&id_inst[0]) | (id_inst[31]&!id_inst[13]&!id_inst[6]
+    &!id_inst[5]&!id_inst[4]&!id_inst[3]&!id_inst[2]&id_inst[1]
+    &id_inst[0]) | (id_inst[19]&!id_inst[6]&id_inst[4]&!id_inst[3]
+    &id_inst[2]&id_inst[1]&id_inst[0]) | (id_inst[31]&!id_inst[14]
+    &!id_inst[12]&!id_inst[6]&!id_inst[4]&!id_inst[3]&!id_inst[2]
+    &id_inst[1]&id_inst[0]);
+
