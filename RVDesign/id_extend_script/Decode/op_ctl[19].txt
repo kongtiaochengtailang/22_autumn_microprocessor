@@ -1,2 +1,0 @@
-assign op_ctl[19] = 1'b0 ;
-
